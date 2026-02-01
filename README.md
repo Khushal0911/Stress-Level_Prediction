@@ -34,7 +34,7 @@ I developed this application after mastering the AI/ML fundamentals through the 
 | :--- | :--- |
 | **Machine Learning** | Python, Scikit-Learn, Pandas, Joblib |
 | **Backend API** | Flask, Flask-CORS |
-| **Frontend UI** | React (Vite), Tailwind CSS, Framer Motion |
+| **Frontend UI** | React (Vite), Tailwind CSS |
 
 ---
 
