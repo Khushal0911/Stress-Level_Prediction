@@ -1,35 +1,56 @@
-# Stress-Level_Prediction
-A professional README.md is your "technical storefront." Since you’ve mastered the AI/ML fundamentals through Masai School and TiHAN-IIT Hyderabad, your documentation should reflect that rigor.
+# 🧠 Student Stress Predictor
+### AI-Powered Wellness Analysis
 
-Below is a complete template. You can copy this directly into a file named README.md in your project folder.
+---
 
-🧠 Student Stress Predictor: End-to-End AI Solution
-Project Overview
-This project is an AI-powered wellness tool designed to predict student stress levels (Low, Medium, High). It bridges the gap between complex Machine Learning research and a user-centric web interface.
+## 📌 Project Overview
+This project is an end-to-end AI solution designed to predict student stress levels categorized as **Low**, **Medium**, or **High**. It features a robust Machine Learning backend integrated with a modern, responsive React interface.
 
-I developed this project after building a strong foundation in AI/ML fundamentals through the specialized program with Masai School and TiHAN-IIT Hyderabad. I am deeply grateful to the faculty for the technical depth and mentorship that made this deployment possible.
+I developed this application after mastering the AI/ML fundamentals through the specialized program with **Masai School** and **TiHAN-IIT Hyderabad**. I am incredibly grateful to the faculty for the technical depth and mentorship that made this deployment possible.
 
-🚀 Key Technical Highlights
-Ensemble Modeling: Built a Soft-Voting Classifier combining SVM (RBF Kernel) and KNN (Manhattan Distance) to leverage both boundary and proximity-based logic.
+---
 
-Near-Zero Variance: Achieved a remarkable 0.11% gap between Training Accuracy (88.75%) and Test Accuracy (88.64%), proving excellent model generalization.
+## 🚀 Key Technical Highlights
 
-Feature Engineering: Reduced the feature space from 20+ variables to the 6 most impactful predictors (Anxiety, Sleep Quality, etc.) to optimize UX and reduce noise.
+### **1. Ensemble Modeling**
+* Developed a **Soft-Voting Classifier** combining **SVM** (RBF Kernel) and **KNN** (Manhattan Distance).
+* Balanced global boundary logic with local proximity patterns for superior stability.
 
-Full-Stack Architecture: Integrated a Flask backend microservice with a modern React (Vite) frontend for real-time inference.
+### **2. Minimal Variance & Generalization**
+* Achieved a remarkable **0.11% variance gap** between Training and Testing accuracy.
+* **Training Accuracy:** 88.75%
+* **Test Accuracy:** 88.64%
+* This ensures the model performs reliably on real-world, unseen data.
 
-📊 Model Performance
-The model was evaluated using a multi-class Confusion Matrix to ensure precision across all stress categories.
+### **3. Smart Feature Selection**
+* Reduced 20+ variables to the **6 most impactful predictors** (Anxiety, Sleep Quality, Study Load, etc.).
+* Optimized for a clean User Experience (UX) without sacrificing model precision.
 
-Training Accuracy: 88.75%
+---
 
-Test Accuracy: 88.64%
+## 🛠️ Tech Stack
 
-Ensemble Strategy: Soft-Voting (SVM + KNN)
+| Layer | Technology |
+| :--- | :--- |
+| **Machine Learning** | Python, Scikit-Learn, Pandas, Joblib |
+| **Backend API** | Flask, Flask-CORS |
+| **Frontend UI** | React (Vite), Tailwind CSS, Framer Motion |
 
-🛠️ Tech Stack
-AI/ML: Python, Scikit-Learn, Pandas, NumPy, Joblib
+---
 
-Backend: Flask, Flask-CORS
+## 📊 Model Evaluation
+The model was validated using a **Confusion Matrix** to ensure high precision across all three classes:
+* **Low Stress:** High True Positive rate.
+* **Medium Stress:** Effectively distinguished from extremes.
+* **High Stress:** Accurate detection for critical wellness intervention.
 
-Frontend: React (Vite), Tailwind CSS, Framer Motion, Lucide React
+---
+
+## ⚙️ How to Run Locally
+
+### **Backend Setup**
+1. Navigate to the root directory.
+2. Ensure `stress_model_small.pkl` and `scaler_small.pkl` are present.
+3. Run the Flask server:
+   ```bash
+   python app.py
